@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav1 {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #222f3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav i {
+    margin: 0px 5px;
+}
+
+.nav1 a {
+    text-decoration: none;
+    background: #e67e22;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+
+.nav1 p {
+    margin: 0px;
+}
+
+.nav2 {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.nav2 img {
+    width: 110px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7) 80%, #e67e22), url('college.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.h-text {
+    max-width: 600px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.h-text h1 {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.h-text span {
+    color: #e67e22;
+    font-family: 'Dancing Script', cursive ;
+}
+
+.h-text p {
+    font-size: 20px;
+    margin: 40px 0px;
+    line-height: 30px;
+}
+
+.h-text a {
+    text-decoration: none;
+    color: white;
+    background: #e67e22;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+
+
+.ftr {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #222f3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .h-text {
+        top: 40%;
+    }
+}
+
+
+
+
+
+
+
